@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'real-time-map';
   address: string = '';
   center: google.maps.LatLngLiteral = { lat: -33.4489, lng: -70.6693 }; // Santiago, Chile
-  zoom: number = 12;
+  zoom: number = 13;
   mapOptions: google.maps.MapOptions = {
     mapTypeId: 'roadmap',
     scrollwheel: true,
