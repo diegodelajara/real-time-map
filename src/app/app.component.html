@@ -1,4 +1,5 @@
 <div class="container">
+  <!-- Mapa de Google -->
   <google-map
     height="500px"
     width="100%"
@@ -6,9 +7,11 @@
     [zoom]="zoom"
     [options]="mapOptions"
   >
+    <!-- Marcadores dinámicos -->
     <map-marker *ngFor="let marker of markers" [position]="marker"></map-marker>
   </google-map>
 
+  <!-- Campo para ingresar la dirección -->
   <div class="input-container">
     <mat-form-field appearance="fill">
       <mat-label>Dirección</mat-label>
